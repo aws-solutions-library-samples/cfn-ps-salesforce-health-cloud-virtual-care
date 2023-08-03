@@ -1,5 +1,5 @@
 project:
-  name: quickstart-salesforce-health-cloud-virtual-care
+  name: cfn-ps-salesforce-health-cloud-virtual-care
   owner: quickstart-eng@amazon.com
   template: templates/salesforce-health-cloud-virtual-care.template.yaml
   parameters:
