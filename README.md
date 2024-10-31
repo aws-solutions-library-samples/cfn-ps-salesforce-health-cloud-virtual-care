@@ -1,5 +1,5 @@
 
-## Salesforce Health Cloud: Virtual Care on AWS
+## Guidance for Simplifying Virtual Appointments using Salesforce Health Cloud on AWS
 
 ## Overview
 
