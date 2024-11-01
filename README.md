@@ -55,7 +55,7 @@ This Guidance provides the following deployment option for provisioning Virtual 
 
 If you’ve already deployed Virtual Care and just need to upgrade your existing deployment, perform the following steps:
 1. Do the following steps to download the latest template file from GitHub:
-   1. Navigate to the [Github source code](https://github.com/aws-solutions-library-samples/guidance-for-simplifying-virtual-appointments-using-salesforce-health-cloud-on-aws/edit/main/README.md) for this Guidance to open the GitHub repository. 
+   1. Navigate to the [Github source code](https://github.com/aws-solutions-library-samples/guidance-for-simplifying-virtual-appointments-using-salesforce-health-cloud-on-aws) for this Guidance to open the GitHub repository. 
    2. Open the **template** folder to access the latest CloudFormation template. 
    3. Download the template.
 2. In the AWS Management Console, choose **Services > CloudFormation**. 
