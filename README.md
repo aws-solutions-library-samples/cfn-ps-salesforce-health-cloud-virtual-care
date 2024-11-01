@@ -9,9 +9,19 @@ This deployment integrates Virtual Care with Amazon Chime to offer video confere
 
 ## Costs and licenses
 
-This Guidance integrates various AWS services with a Salesforce Health Cloud. To receive support from AWS, you must enroll in either AWS Business Support or a higher support plan. For details and costs, refer to [Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/).
+This Guidance integrates various AWS services with a Salesforce Health Cloud. For details and costs, refer to [Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/).
 
 There is no cost to use this Guidance, but you will be billed for any AWS services or resources that this solution deploys. 
+
+As of September 2024, the cost for running this Guidance with the default settings in the US East (N. Virginia) is approximately $5.18 per month, for 1000 virtual care minutes-per-attendee and 100 total session-minutes. 
+
+| Region                | Description                        | Service            | Monthly | Assumptions                                                                                                                                                                                                                                                                                                                                                                      |
+|-----------------------|------------------------------------|--------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| US East (N. Virginia) | Connect to a standard WebRTC session                | Amazon ChimeSDK    | $1.70  | Standard definition session at 1,000 minutes-per-attendee |
+| US East (N. Virginia) | Capture of 720p composited WebRTC media             | Amazon ChimeSDK    | $1.00  | 100 session-minutes |
+| US East (N. Virginia) | Messaging - Message Send+Control+System Message     | Amazon ChimeSDK    | $0.08  | 100 messages (Virtual Care waiting room) |
+| US East (N. Virginia) | Standard Live Transcription                         | Amazon Transcribe  | $2.40  | 100 session-minutes standard live transcriptions|
+
 
 ## Architecture
 
@@ -45,7 +55,7 @@ This Guidance provides the following deployment option for provisioning Virtual 
 
 If you’ve already deployed Virtual Care and just need to upgrade your existing deployment, perform the following steps:
 1. Do the following steps to download the latest template file from GitHub:
-   1. Navigate to the [Github source code]([https://github.com/aws-ia/cfn-ps-salesforce-health-cloud-virtual-care/](https://github.com/aws-solutions-library-samples/cfn-ps-salesforce-health-cloud-virtual-care) for this Guidance to open the GitHub repository. 
+   1. Navigate to the [Github source code](https://github.com/aws-solutions-library-samples/guidance-for-simplifying-virtual-appointments-using-salesforce-health-cloud-on-aws/edit/main/README.md) for this Guidance to open the GitHub repository. 
    2. Open the **template** folder to access the latest CloudFormation template. 
    3. Download the template.
 2. In the AWS Management Console, choose **Services > CloudFormation**. 
